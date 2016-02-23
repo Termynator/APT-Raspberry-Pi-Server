@@ -59,6 +59,7 @@ date = Time.new()
 #TODO: Must change for production
 #TODO: Would be good to get the inverter values from the website first, currently they are hard coded.
 spa_data = `/Users/stemple/RubymineProjects/aptweblab_old/lib/tasks/spa #{date.year} #{date.month} #{date.day} #{date.hour} #{date.min} 0 -8.0 64.797 -122.514 37.97 10 885 15 15.0 65 0.5667`
+#spa_data = system `pyhton pysolar.py`
 
 angle = spa_data.split[7].to_f
 
